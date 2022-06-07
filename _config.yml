@@ -16,9 +16,9 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "CinC 2023"
+title                    : "Computing in Cardiology 2023"
 title_separator          : "-"
-subtitle                 : "Computing in Cardiology 2023 ■ 24-27 September 2023 ■ Atlanta, GA, USA"
+subtitle                 : "24-27 September 2023 ■ Atlanta, Georgia, USA"
 name                     : "CinC 2023"
 description              : "Computing in Cardiology 2023"
 url                      : "https://cinc2023testing.github.io"
