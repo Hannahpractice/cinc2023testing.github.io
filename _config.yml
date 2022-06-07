@@ -104,9 +104,9 @@ analytics:
 
 # Site Author
 author:
-  name             :
+  name             : CinC 2023
   avatar           : "/assets/img/cinc.svg"
-  bio              :
+  bio              : ""
   location         :
   email            :
   links:
