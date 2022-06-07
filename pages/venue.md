@@ -1,6 +1,6 @@
 ---
 title: "Venue"
-layout: archive
+layout: single
 author_profile: true
 permalink: /venue/
 ---

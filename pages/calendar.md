@@ -1,6 +1,6 @@
 ---
 title: "Calendar"
-layout: archive
+layout: single
 author_profile: true
 permalink: /calendar/
 ---

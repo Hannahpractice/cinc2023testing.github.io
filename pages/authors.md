@@ -1,6 +1,6 @@
 ---
 title: "Authors"
-layout: archive
+layout: single
 author_profile: true
 permalink: /authors/
 ---

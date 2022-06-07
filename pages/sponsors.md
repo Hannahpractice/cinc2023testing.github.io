@@ -1,6 +1,6 @@
 ---
 title: "Sponsors"
-layout: archive
+layout: single
 author_profile: true
 permalink: /sponsors/
 ---

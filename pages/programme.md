@@ -1,6 +1,6 @@
 ---
 title: "Programme"
-layout: archive
+layout: single
 author_profile: true
 permalink: /programme/
 ---
