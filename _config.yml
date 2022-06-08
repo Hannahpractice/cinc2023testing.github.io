@@ -131,6 +131,12 @@ author:
     - label: "Registration"
       icon: "fas fa-fw fa-sticky-note"
       url: "/registration/"
+    - label: "PhysioNet Challenge"
+      icon: "fas fa-fw fa-puzzle-piece"
+      url: "/challenge/"
+    - label: "Tourism"
+      icon: "fas fa-fw fa-globe-americas"
+      url: "/tourism/"
 
 
 ## Site Footer

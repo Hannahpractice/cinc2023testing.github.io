@@ -6,7 +6,7 @@ We are using the [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes
 
 ### Changing pages
 
-To add or edit a page, add or edit a Markdown file in the `pages` folder. For example, the file `/pages/example.md` with the contents
+Add or edit a Markdown file in the `pages` folder to add or edit a webpage. For example, add the following text to a file `/pages/example.md`:
 
     ---
     title: "An Example Page"
@@ -17,21 +17,21 @@ To add or edit a page, add or edit a Markdown file in the `pages` folder. For ex
 
     Hello, world.
 
-will appear at [https://cinc2023.org/example/](https://cinc2023.org/example/). The title will be "An Example Page", and the body will be "Hello, world."
-
-### Changing images and other files
-
-To add or edit an image, place the image in `/assets/img/` and display it by adding `![Example](/assets/img/example.svg)` to the Markdown file where you want the image to appear. Check online for how to modify image size, positioning, etc. in Kramdown.
-
-Advice: Use SVG for vector images, PNG for screenshots, and JPG for photographs. We can convert PDFs to SVGs as needed. Always use relative links (see below) instead of absolute links.
+The webpage will appear at [https://cinc2023.org/example/](https://cinc2023.org/example/). The title will be "An Example Page", and the body will be "Hello, world."
 
 ### Links
 
-To refer to other pages on the site, always use relative links instead of absolute links.
+__Always__ use relative links instead of absolute links to link to other pages or images on the site.
 
-For example, if we are on `https://cinc2023.org/` and want to add a link to `https://cinc2023.org/example/`, then write something like `[link](/example/)` instead of `[link](https://cinc2023.org/example/)`.
+For example, if we are on `https://cinc2023.org/` and want to add a link to `https://cinc2023.org/example/`, then write something like `[link](/example/)` to the home page instead of `[link](https://cinc2023.org/example/)`.
 
-For another example, if we are on `https://cinc2023.org/here/` and want to add a link to `https://cinc2023.org/there/`, then write something like `[link](../there/)` instead of `[link](https://cinc2023.org/there/)`.
+For another example, if we are on `https://cinc2023.org/here/` and want to add a link to `https://cinc2023.org/there/`, then write something like `[link](../there/)` to `/here/` instead of `[link](https://cinc2023.org/there/)`.
+
+### Changing images and other files
+
+Place an image in `/assets/img/` and display it by adding `![Example](/assets/img/example.svg)` to the Markdown file where you want the image to appear. Check online for how to modify image size, positioning, etc. in Kramdown.
+
+Advice: Use SVG for vector images, PNG for screenshots, and JPG for photographs. We can convert PDFs to SVGs as needed. Always use relative links (see below) instead of absolute links.
 
 ### LaTeX
 
@@ -39,40 +39,19 @@ I edited the `/_includes/scripts.html` file to add LaTeX support:
 
     <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML"> </script>
 
-You can add equations by writing something like `$$\int_0^\infty \exp{-x^2} \dx = \frac{\sqrt{\pi}}{2}$$`. Note that two dollar signs are needed here instead of the usual single dollar sign because dollar signs are common on websites and we don't want to need to escape them.
+You can add equations by writing something like `$$\int_0^\infty \exp{-x^2} dx = \frac{\sqrt{\pi}}{2}$$`. Note that two dollar signs are needed here instead of the usual single dollar sign because dollar signs are common on websites and we don't want to need to escape them.
 
-Here's a longer/better command with an optional `mathjax` flag to only provide LaTeX support to pages that need it (reduces load times), but I used the above simple solution and stopped there.
-
-    {% if page.mathjax %}
-    <script type="text/javascript" async
-    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
-    </script>
-    {% endif %}
-
-    <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        extensions: ["tex2jax.js"],
-        jax: ["input/TeX", "output/HTML-CSS"],
-        tex2jax: {
-        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
-        processEscapes: true
-        },
-        "HTML-CSS": { availableFonts: ["TeX"] }
-    });
-    </script> 
-
-### Navigation bar (top bar)
-
-To edit the navigation bar, edit `_data/navigation.yml`. Check the other entries for examples.
+### Side, navigation/top bar, website globals, etc.
 
 ### Sidebar, website globals, etc.
 
-To edit the sidebar, edit `_config.yml`. This file controls much more than the sidebar. Be careful.
+Edit `_config.yml` to edit the side bar.. This file controls much more than the sidebar. Be careful.
 
-## Locally previewing the website
+Edit `_data/navigation.yml` to edit the top/nagivation bar. Check the other entries for examples.
 
-_**Please**_ view the website locally before updating anything on GitHub.
+## Previewing the website locally
+
+__Please__ preview the website locally before updating anything on GitHub.
 
 To preview the website locally, run
 
@@ -89,9 +68,9 @@ You will probably need to install several dependancies for the local preview to 
 
 You can edit the pages (see above) and refresh your browser to immediately see your updates, but you need to restart `bundle exec jekyll serve` every time you edit the `_config.yml` to see your changes.
 
-## Uploading the website
+## Update the website
 
-_**Please**_ view the website locally before updating anything on GitHub.
+__Please__ view the website locally before updating anything on GitHub.
 
 You can use the usual `git pull`, `git add`, `git commit`, `git push` commands to push changes to GitHub. Remember to pull changes before you push changes.
 
