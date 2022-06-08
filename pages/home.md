@@ -1,5 +1,5 @@
 ---
-title: "Welcome to CinC 2023"
+title: "Welcome to Computing in Cardiology 2023"
 layout: single
 author_profile: true
 permalink: /

@@ -1,6 +1,6 @@
 ---
 title: "About"
-layout: single
+layout: collection
 author_profile: true
 permalink: /about/
 ---
