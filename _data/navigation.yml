@@ -1,7 +1,7 @@
-## main links
-#main:
-#  - title: "About"
-#    url: "/about/"
+# main links
+main:
+  - title: "About"
+    url: "/about/"
 #  - title: "Venue"
 #    url: "/venue/"
 #  - title: "Programme"
@@ -14,3 +14,7 @@
 #    url: "/sponsors/"
 #  - title: "Registration"
 #    url: "/registration/"
+#  - title: "PhysioNet Challenge"
+#    url: "/challenge/"
+#  - title: "Tourism"
+#    url: "/tourism/"
